@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" style="height: 100;">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Flat Earth HQ</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  </head>
+<body class="d-flex flex-column min-vh-100">
+
+<!-- NavBar -------------------------->
+<nav class=" navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html"><img src="assets/flatEarthLogo.png" alt="Site Logo" style="height: 75px; width: 100px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="meetTheTeam.html">Meet the Team</a></li>
+      <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+      <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+      <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>        
+    </ul>
+  </div>  
+</nav>
+<br>
+<!-- NavBar End ---------------------->
+
+<!-- Main ---------------------------->
+<div class="conatiner-fluid" style="flex: 1;">
+    <br>
+
+
+    <div class="container">
+      <h2>CONTACT</h2>
+      <hr>
+      <h3 class="text-center">Contact the Flat Earth Society</h3>
+      <hr>
+      
+      <div class="container-fluid d-flex justify-content-center">
+        
+        <form id="myForm" style="width: 450px;" class="was-validated" onsubmit="myFormSubmits(event)">
+        
+          <!-- Select Title -->
+          <div class="form-group">
+            <label for="nameTitle">Title</label>
+            <select id="nameTitle" class="form-control" name="Title " required>
+              <option value="">Please select a title...</option>
+              <option value="MR">MR.</option>
+              <option value="MISS">Miss</option>
+              <option value="MRS">Mrs.</option>
+              <option value="DR">Dr.</option>
+              <option value="PROF">Prof. of Flatness</option>
+            </select>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+        
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" class="form-control" id="fullName" name="Full Name " placeholder="Please enter your full name" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Please enter your email"  name="Email "  required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" class="form-control" id="phoneNumber" placeholder="Please enter your phone number"  name="Phone Number "  required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          
+          <!-- Address -->
+          <div class="form-group">
+            <label for="address">Reason for Contacting</label>
+            <textarea class="form-control" id="address" rows="3" placeholder="Report a suspicious horizon, globe sighting, or ice-wall rumour..." name="Contact Reason "  required></textarea>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          
+          <!-- Upload CV -->
+          <div class="form-group">
+            <label for="uploadFict">Upload your totally conclusive evidence...</label>
+            <small class="text-muted">* OPTIONAL</small>
+            <input type="file" class="form-control-file" id="uploadFict" name="File Upload ">
+        </div>
+          
+          <!-- Buttons -->
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-success">Submit Evidence</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+</div>
+
+<!-- Main End ------------------------>
+
+<!-- Footer -------------------------->
+<footer class="text-center bg-dark text-white py-3"> <!-- py-3 = padding, optional-->
+    <div>
+      <a href="#"><img src="assets/socialIcons/icons8-x-64.png"  alt="X Link Icon"></a>
+      <a href="#"><img src="assets/socialIcons/icons8-youtube-squared-64.png"  alt="Youtube Link Icon"></a>
+      <a href="#"><img src="assets/socialIcons/icons8-instagram-64.png"  alt="Instagram Link Icon"></a>
+      <a href="#"><img src="assets/socialIcons/icons8-discord-64.png"  alt="Discord Link Icon"></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Copyright &copy; 2026 &middot; All horizons reserved &middot; <a href="index.html">Flat Earth Project</a></p>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class="text-muted">Privacy-ish Policy</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-muted">Terms of Flatness</a></li>
+                    <li class="list-inline-item"><a href="contact.html" class="text-muted">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End ---------------------->
+
+<!-- CUSTOM SCRIPTING FILE -----------> 
+<script src="js/formScript.js"></script>
+<!-- CUSTOM SCRIPTING FILE END -------> 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
